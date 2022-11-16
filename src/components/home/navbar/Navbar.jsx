@@ -21,7 +21,7 @@ const Navbar = () => {
           <Link to="/">
             <li className="navlink">Home</li>
           </Link>
-          <Link>
+          <Link to="/placetostay">
             <li className="navlink">Place to stay</li>
           </Link>
 
@@ -29,7 +29,7 @@ const Navbar = () => {
             <li className="navlink">NFTs</li>
           </Link>
 
-          <Link to="/community">
+          <Link>
             <li className="navlink">Community</li>
           </Link>
         </ul>

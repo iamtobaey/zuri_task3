@@ -2,14 +2,14 @@ import React from "react";
 import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
-import Community from "./components/pages/community/Community";
+import Placetostay from "./components/pages/placetostay/Placetostay";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/community" element={<Community />} />
+        <Route path="/placetostay" element={<Placetostay />} />
       </Routes>
     </BrowserRouter>
   );
