@@ -1,0 +1,78 @@
+#intro {
+  margin: 4rem 0;
+}
+
+#intro .intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 99px;
+}
+
+#intro .intro .intro-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: -80px;
+}
+
+#intro .intro .intro-left .intro-head {
+  font-size: 56px;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 140%;
+}
+
+#intro .intro .intro-left .intro-head span {
+  color: var(--color-primary);
+}
+
+#intro .intro .intro-left .intro-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: var(--color-text);
+}
+
+#intro .intro .intro-left .intro-search {
+  display: flex;
+  width: 100%;
+}
+
+#intro .intro .intro-left .intro-search input {
+  padding: 1rem;
+  background: rgba(247, 247, 247, 0.1);
+  border: 1px solid #a3a3a3;
+  width: 100%;
+  border-radius: 8px 0px 0px 8px;
+}
+
+#intro .intro .intro-left .intro-search button {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
+  border-radius: 0px 8px 8px 0px;
+  padding: 1rem 2rem;
+  border: 1px solid var(--color-primary);
+  color: var(--color-white);
+  width: 60%;
+}
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  #intro .intro {
+    grid-template-columns: 1fr;
+  
+
+  }
+}
+
+/* ============= MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  #intro .intro .intro-left .intro-head {
+    font-size: 46px;
+    
+  }
+  
+}

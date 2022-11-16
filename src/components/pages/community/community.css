@@ -1,0 +1,78 @@
+#community {
+  margin: 0;
+  padding: 0;
+}
+
+#community .community {
+  margin: 2rem auto;
+  color: var(--color-text);
+}
+
+#community .community .comm-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+#community .community .comm-links a {
+  font-weight: bold;
+}
+
+#community .community .comm-links a:last-child {
+  border: 1px solid #d8d8d8;
+  font-size: smaller;
+  padding: 0.4rem 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+#community .community .comm-links a .more {
+  font-size: 1rem;
+}
+
+#community .community .comm-body {
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+#community .community .comm-cards {
+  display: grid;
+  padding: 1rem 0;
+  gap: 0.6rem;
+  border: 1px solid #a3a3a3;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+#community .community .comm-cards .comm-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+#community .community .comm-cards .comm-card .fbold {
+  font-weight: bold;
+}
+
+#community .community .comm-cards .star {
+  color: var(--color-primary);
+}
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  #community .community .comm-body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============= MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  #community .community .comm-body {
+    grid-template-columns: 1fr;
+  }
+}

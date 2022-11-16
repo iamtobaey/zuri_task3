@@ -1,0 +1,71 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px;
+  background: #00000049;
+  box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+  /* transition: 0.9s; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 998;
+}
+
+#modal .modal {
+  background-color: #ffffff;
+  width: 550px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#modal .modal .modal-head {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#modal .modal .modal-head span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#modal .modal .modal-body {
+  display: grid;
+  gap: 1rem;
+  padding: 30px;
+}
+
+#modal .modal .modal-body .modal-wallet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #d1d1d1;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+hr {
+    border: 1px solid rgb(230, 230, 230);
+}
+
+#modal .modal .modal-body .modal-wallet:hover {
+  background: #ececec;
+}
+
+#modal .modal .modal-body .modal-wallet div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-weight: bold;
+}
