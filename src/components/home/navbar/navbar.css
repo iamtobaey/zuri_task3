@@ -1,10 +1,15 @@
-
-
-#navbar .navbar{color: var(--color-text);
+#navbar .navbar {
+  color: var(--color-text);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 0;}
+  padding: 2rem 0;
+}
+
+#navbar .navbar .nav-burger {
+  font-size: 1.4rem;
+  display: none;
+}
 
 #navbar .logo img {
   width: 100%;
@@ -25,4 +30,20 @@
   border-radius: 8px;
   background: var(--color-bg);
   cursor: pointer;
+}
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  #navbar .navlinks,
+  .nav-btn {
+    display: none;
+  }
+  #navbar .navbar .nav-burger {
+    font-size: 1.4rem;
+    display: flex;
+  }
+}
+
+/* ============= MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
 }

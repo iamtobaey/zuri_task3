@@ -3,6 +3,7 @@ import "./navbar.css";
 import LOGO from "../../../assets/images/Group.png";
 import Modal from "../modal/Modal";
 import { Link } from "react-router-dom";
+import { MdOutlineMenu } from "react-icons/md";
 
 const Navbar = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -10,14 +11,14 @@ const Navbar = () => {
     setModalIsOpen(true);
   };
   return (
-    <section id="navbar" className="container">
+    <section id="navbar" >
       {modalIsOpen && <Modal />}
-      <div className="navbar">
+      <div className="navbar container">
         <div className="logo">
           <img src={LOGO} alt="" />
         </div>
         <ul className="navlinks">
-          <Link to='/'>
+          <Link to="/">
             <li className="navlink">Home</li>
           </Link>
           <Link>
@@ -35,6 +36,8 @@ const Navbar = () => {
         <button className="nav-btn" onClick={connectHandler}>
           Connect wallet
         </button>
+
+        <MdOutlineMenu className="nav-burger" />
       </div>
     </section>
   );
